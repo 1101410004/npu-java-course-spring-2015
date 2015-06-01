@@ -30,13 +30,13 @@ package tw.edu.npu.mis;
  * @author STP
  */
 public class AlternativeView implements Observer, Showable {
-    private final Mode mModel;
+    private final Model mModel;
     //private boolean mIsValid;
     
     private final String mName;
-    privare final Window mWindow;
+    private final Window mWindow;
     
- public AlternativeView(Sting name, Window window, Model model){
+ public AlternativeView(String name, Window window, Model model){
         mName = name;
         mWindow = window;
         mModel = model;
@@ -48,7 +48,7 @@ public class AlternativeView implements Observer, Showable {
  }
     
  public void onDraw(){
-        System.out.printIn("AlternativeView("+mName+"):"+new StringBuilder(mModel.getData().reverser()));
+        System.out.println("AlternativeView("+mName+"):"+new StringBuilder(mModel.getData()).reverse());
  }
  
  @Override
