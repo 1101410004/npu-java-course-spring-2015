@@ -25,12 +25,16 @@
  */
 package tw.edu.npu.mis;
 
+import java.util.ArrayList;
+import java.util.Lisr;
+
+
 /**
  *
  * @author STP
  */
 public class Subject {
-    private List <Observer> mObservers = new ArrayList<>();
+    private List<Observer> mObservers = new ArrayList<>();
     
     public void attach(Observer o){
         mObservers.add(o);
