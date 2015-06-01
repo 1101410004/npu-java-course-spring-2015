@@ -51,7 +51,7 @@ public class AlternativeView implements Observer, Showable {
         System.out.printIn("AlternativeView("+mName+"):"+new StringBuilder(mModel.getData().reverser()));
  }
  
- @Overide
+ @Override
     public void update(){
         invalidate();
     }
