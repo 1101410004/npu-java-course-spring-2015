@@ -68,6 +68,11 @@ public class ncalculator extends javax.swing.JFrame {
         });
 
         jbtn2.setText("2");
+        jbtn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn2ActionPerformed(evt);
+            }
+        });
 
         jbtn3.setText("3");
 
@@ -196,6 +201,11 @@ public class ncalculator extends javax.swing.JFrame {
        String Enternumber = jtxtdisplay.getText() + jbtn1.getText();
        jtxtdisplay.setText(Enternumber);
     }//GEN-LAST:event_jbtn1ActionPerformed
+
+    private void jbtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn2ActionPerformed
+        String Enternumber = jtxtdisplay.getText() + jbtn2.getText();
+       jtxtdisplay.setText(Enternumber);
+    }//GEN-LAST:event_jbtn2ActionPerformed
 
     /**
      * @param args the command line arguments
