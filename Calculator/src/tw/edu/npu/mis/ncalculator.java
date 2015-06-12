@@ -147,8 +147,18 @@ public class ncalculator extends javax.swing.JFrame {
         });
 
         jbtn14.setText("*");
+        jbtn14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn14ActionPerformed(evt);
+            }
+        });
 
         jbtn15.setText("/");
+        jbtn15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn15ActionPerformed(evt);
+            }
+        });
 
         jbtn16.setText("C");
         jbtn16.addActionListener(new java.awt.event.ActionListener() {
@@ -317,6 +327,18 @@ public class ncalculator extends javax.swing.JFrame {
        jtxtdisplay.setText("");
        operations="-";
     }//GEN-LAST:event_jbtn13ActionPerformed
+
+    private void jbtn15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn15ActionPerformed
+       firstnumber = Double.parseDouble(jtxtdisplay.getText());
+       jtxtdisplay.setText("");
+       operations="/";
+    }//GEN-LAST:event_jbtn15ActionPerformed
+
+    private void jbtn14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn14ActionPerformed
+     firstnumber = Double.parseDouble(jtxtdisplay.getText());
+       jtxtdisplay.setText("");
+       operations="*";
+    }//GEN-LAST:event_jbtn14ActionPerformed
 
     /**
      * @param args the command line arguments
