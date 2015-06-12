@@ -82,18 +82,53 @@ public class ncalculator extends javax.swing.JFrame {
         });
 
         jbtn4.setText("4");
+        jbtn4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn4ActionPerformed(evt);
+            }
+        });
 
         jbtn5.setText("5");
+        jbtn5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn5ActionPerformed(evt);
+            }
+        });
 
         jbtn6.setText("6");
+        jbtn6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn6ActionPerformed(evt);
+            }
+        });
 
         jbtn7.setText("7");
+        jbtn7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn7ActionPerformed(evt);
+            }
+        });
 
         jbtn8.setText("8");
+        jbtn8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn8ActionPerformed(evt);
+            }
+        });
 
         jbtn9.setText("9");
+        jbtn9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn9ActionPerformed(evt);
+            }
+        });
 
         jbtn10.setText("0");
+        jbtn10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn10ActionPerformed(evt);
+            }
+        });
 
         jbtn11.setText(".");
 
@@ -216,6 +251,41 @@ public class ncalculator extends javax.swing.JFrame {
        String Enternumber = jtxtdisplay.getText() + jbtn3.getText();
        jtxtdisplay.setText(Enternumber);
     }//GEN-LAST:event_jbtn3ActionPerformed
+
+    private void jbtn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn4ActionPerformed
+         String Enternumber = jtxtdisplay.getText() + jbtn4.getText();
+       jtxtdisplay.setText(Enternumber);
+    }//GEN-LAST:event_jbtn4ActionPerformed
+
+    private void jbtn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn5ActionPerformed
+        String Enternumber = jtxtdisplay.getText() + jbtn5.getText();
+       jtxtdisplay.setText(Enternumber);
+    }//GEN-LAST:event_jbtn5ActionPerformed
+
+    private void jbtn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn6ActionPerformed
+        String Enternumber = jtxtdisplay.getText() + jbtn6.getText();
+       jtxtdisplay.setText(Enternumber);
+    }//GEN-LAST:event_jbtn6ActionPerformed
+
+    private void jbtn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn7ActionPerformed
+         String Enternumber = jtxtdisplay.getText() + jbtn7.getText();
+       jtxtdisplay.setText(Enternumber);
+    }//GEN-LAST:event_jbtn7ActionPerformed
+
+    private void jbtn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn8ActionPerformed
+       String Enternumber = jtxtdisplay.getText() + jbtn8.getText();
+       jtxtdisplay.setText(Enternumber);
+    }//GEN-LAST:event_jbtn8ActionPerformed
+
+    private void jbtn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn9ActionPerformed
+         String Enternumber = jtxtdisplay.getText() + jbtn9.getText();
+       jtxtdisplay.setText(Enternumber);
+    }//GEN-LAST:event_jbtn9ActionPerformed
+
+    private void jbtn10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn10ActionPerformed
+        String Enternumber = jtxtdisplay.getText() + jbtn10.getText();
+       jtxtdisplay.setText(Enternumber);
+    }//GEN-LAST:event_jbtn10ActionPerformed
 
     /**
      * @param args the command line arguments
