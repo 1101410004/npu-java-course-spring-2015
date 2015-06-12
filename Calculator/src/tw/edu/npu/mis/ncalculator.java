@@ -12,7 +12,7 @@ package tw.edu.npu.mis;
 public class ncalculator extends javax.swing.JFrame {
 
     double firstnumber;
-    double secindnumber;
+    double secondnumber;
     double result;   
     String operations;
     
@@ -180,6 +180,11 @@ public class ncalculator extends javax.swing.JFrame {
         });
 
         jbtn18.setText("=");
+        jbtn18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn18ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -360,6 +365,36 @@ public class ncalculator extends javax.swing.JFrame {
         ops = ops * (-1);
         jtxtdisplay.setText(String.valueOf(ops));
     }//GEN-LAST:event_jbtn17ActionPerformed
+
+    private void jbtn18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn18ActionPerformed
+       String answer;
+       secondnumber = Double.parseDouble(jtxtdisplay.getText());
+       if(operations == "+"){
+           result = firstnumber + secondnumber;
+           answer = String.format("%.of", result);
+           jtxtdisplay.setText(answer);
+       }
+       else if(operations == "-")
+       {
+        result = firstnumber - secondnumber;
+           answer = String.format("%.of", result);
+           jtxtdisplay.setText(answer);
+    }
+       else if(operations == "*")
+       {
+        result = firstnumber * secondnumber;
+           answer = String.format("%.of", result);
+           jtxtdisplay.setText(answer);
+    }
+        else if(operations == "/")
+       {
+        result = firstnumber / secondnumber;
+           answer = String.format("%.of", result);
+           jtxtdisplay.setText(answer);
+    }
+       
+       
+    }//GEN-LAST:event_jbtn18ActionPerformed
 
     /**
      * @param args the command line arguments
