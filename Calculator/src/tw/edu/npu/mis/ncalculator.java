@@ -141,6 +141,11 @@ public class ncalculator extends javax.swing.JFrame {
         jbtn15.setText("/");
 
         jbtn16.setText("C");
+        jbtn16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn16ActionPerformed(evt);
+            }
+        });
 
         jbtn17.setText("+/-");
 
@@ -286,6 +291,10 @@ public class ncalculator extends javax.swing.JFrame {
         String Enternumber = jtxtdisplay.getText() + jbtn10.getText();
        jtxtdisplay.setText(Enternumber);
     }//GEN-LAST:event_jbtn10ActionPerformed
+
+    private void jbtn16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn16ActionPerformed
+      jtxtdisplay.setText("");
+    }//GEN-LAST:event_jbtn16ActionPerformed
 
     /**
      * @param args the command line arguments
