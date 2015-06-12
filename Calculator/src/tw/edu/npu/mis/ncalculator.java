@@ -140,6 +140,11 @@ public class ncalculator extends javax.swing.JFrame {
         });
 
         jbtn13.setText("-");
+        jbtn13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn13ActionPerformed(evt);
+            }
+        });
 
         jbtn14.setText("*");
 
@@ -306,6 +311,12 @@ public class ncalculator extends javax.swing.JFrame {
        jtxtdisplay.setText("");
        operations="+";
     }//GEN-LAST:event_jbtn12ActionPerformed
+
+    private void jbtn13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn13ActionPerformed
+       firstnumber = Double.parseDouble(jtxtdisplay.getText());
+       jtxtdisplay.setText("");
+       operations="-";
+    }//GEN-LAST:event_jbtn13ActionPerformed
 
     /**
      * @param args the command line arguments
