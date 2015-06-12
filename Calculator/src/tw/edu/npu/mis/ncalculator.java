@@ -367,29 +367,31 @@ public class ncalculator extends javax.swing.JFrame {
     }//GEN-LAST:event_jbtn17ActionPerformed
 
     private void jbtn18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn18ActionPerformed
-       String answer;
+       
+        String answer;
        secondnumber = Double.parseDouble(jtxtdisplay.getText());
+     
        if(operations == "+"){
            result = firstnumber + secondnumber;
-           answer = String.format("%.of", result);
+           answer = String.format("%.Of", result);
            jtxtdisplay.setText(answer);
        }
        else if(operations == "-")
        {
         result = firstnumber - secondnumber;
-           answer = String.format("%.of", result);
+           answer = String.format("%.Of", result);
            jtxtdisplay.setText(answer);
     }
        else if(operations == "*")
        {
         result = firstnumber * secondnumber;
-           answer = String.format("%.of", result);
+           answer = String.format("%.Of", result);
            jtxtdisplay.setText(answer);
     }
         else if(operations == "/")
        {
         result = firstnumber / secondnumber;
-           answer = String.format("%.of", result);
+           answer = String.format("%.Of", result);
            jtxtdisplay.setText(answer);
     }
        
