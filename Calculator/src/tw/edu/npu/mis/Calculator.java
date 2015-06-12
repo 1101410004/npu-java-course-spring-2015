@@ -8,7 +8,7 @@ package tw.edu.npu.mis;
 /**
  * The model class of the calculator application.
  */
-public class Calculator {
+public class Calculator extends java.util.Observable {
     
     /**
      * The available operators of the calculator.
