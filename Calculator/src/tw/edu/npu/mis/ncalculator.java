@@ -11,8 +11,8 @@ package tw.edu.npu.mis;
  */
 public class ncalculator extends javax.swing.JFrame {
 
-    double firstnum;
-    double secindnum;
+    double firstnumber;
+    double secindnumber;
     double result;   
     String operations;
     
@@ -133,6 +133,11 @@ public class ncalculator extends javax.swing.JFrame {
         jbtn11.setText(".");
 
         jbtn12.setText("+");
+        jbtn12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtn12ActionPerformed(evt);
+            }
+        });
 
         jbtn13.setText("-");
 
@@ -295,6 +300,12 @@ public class ncalculator extends javax.swing.JFrame {
     private void jbtn16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn16ActionPerformed
       jtxtdisplay.setText("");
     }//GEN-LAST:event_jbtn16ActionPerformed
+
+    private void jbtn12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtn12ActionPerformed
+       firstnumber = Double.parseDouble(jtxtdisplay.getText());
+       jtxtdisplay.setText("");
+       operations="+";
+    }//GEN-LAST:event_jbtn12ActionPerformed
 
     /**
      * @param args the command line arguments
